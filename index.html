@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+<link rel="stylesheet" href="port.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container" role="main" aria-label="Homepage introduction">
+    <div class="profile-pic" tabindex="0" aria-label="Profile picture of Your Name">
+      <!-- Replace the src with your profile picture URL or local path -->
+      <img src="manoj.jpg" alt="Profile Picture" />
+    </div>
+
+    <h1>Hello, I'm Your Manoj</h1>
+    <p class="subtitle">A passionate developer & designer crafting beautiful web experiences</p>
+
+    <div class="options" role="navigation" aria-label="Main navigation buttons">
+      <a href="#about" class="option-btn" role="button" tabindex="0">About Me</a>
+      <a href="#projects" class="option-btn" role="button" tabindex="0">My Projects</a>
+      <a href="#skills" class="option-btn" role="button" tabindex="0">Skills</a>
+      <a href="#contact" class="option-btn" role="button" tabindex="0">Contact</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" tabindex="0" aria-label="About me section">
+    <h2>About Me</h2>
+    <p>
+      I am a full-stack developer with a passion for creating elegant and efficient web applications. With a background in computer science and design, I blend creativity with technical expertise to build user-friendly digital experiences.
+    </p>
+    <p>
+      When I'm not coding, I enjoy photography, traveling, and exploring new technologies. I believe in continuous learning and love collaborating on innovative projects.
+    </p>
+    
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" tabindex="0" aria-label="Projects section">
+    <h2>My Projects</h2>
+    <div class="projects-list">
+      <div class="project-card" tabindex="0" aria-label="Project: Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>A responsive and animated portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+      </div>
+      <div class="project-card" tabindex="0" aria-label="Project: E-commerce Store">
+        <h3>E-commerce Store</h3>
+        <p>An online store with product listings, shopping cart, and payment integration, developed using Node.js and MongoDB.</p>
+      </div>
+      <div class="project-card" tabindex="0" aria-label="Project: Task Manager App">
+        <h3>Task Manager App</h3>
+        <p>A productivity app with task creation, editing, and reminders, built using React and Firebase for real-time updates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" tabindex="0" aria-label="Skills section">
+    <h2>Skills</h2>
+    <div class="skills-list" aria-label="List of skills">
+      <div class="skill" tabindex="0">HTML5 & CSS3</div>
+      <div class="skill" tabindex="0">JavaScript</div>
+      <div class="skill" tabindex="0">Python</div>
+      <div class="skill" tabindex="0">Git & GitHub</div>
+      <!-- <div class="skill" tabindex="0">Node.js</div>
+      <div class="skill" tabindex="0">React</div>
+      <div class="skill" tabindex="0">UI/UX Design</div>
+      <div class="skill" tabindex="0">Firebase</div> -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" tabindex="0" aria-label="Contact section">
+    <h2>Contact Me</h2>
+    <form action="mailto:your.email@example.com" method="POST" enctype="text/plain" aria-label="Contact form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="XYZ@gmail.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" aria-label="Send message">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
